@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'FuturaCondensedExtra';
+    src: url(font/Futura\ Condensed\ Extra\ Bold.otf);
+    font-weight: lighter;
+    font-style: normal;
+}
+:root{
+--font-title:"FuturaCondensedExtra"
+}
+
+*{
+    margin: 0px;
+    border: 0px;
+}
+html body{
+    min-height: 100%;
+    background-color: white;
+    color:black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+header{
+    border-top: 30px solid rgba(214, 214, 214, 0.623);
+    border-bottom: 30px solid rgba(214, 214, 214, 0.623);
+}
+#container{
+    display: flex;
+    align-items: center;
+}
+
+header nav img{
+    background-color: white;
+    margin-left: 30px;
+}
+header nav a{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-left: 80px;
+
+}
+a:hover{
+    text-decoration: underline;
+
+}
+
+main img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    }
+main h2 {
+    font-family: var(--font-title);
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 46px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+p {
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main .offer{
+    font-family:var(--font-title) ;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+section a{
+    padding: 10px;
+    background-color: black;
+    border-radius:20px;
+    color:white;
+    text-align: center;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+#box00{
+    text-align: center;
+    padding: 3px;
+    border-radius: 1px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+#quadrado{
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vh;
+    width: 100vw;
+    gap: 20px;
+}
+
+#quadrado > div{
+    flex: 1; /* cada div ocupa 1/3 do espaço disponível */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.q1{
+    background-image: url(imagens/q1.png);
+}
+.q2{
+    background-image: url(imagens/q2.png);
+
+  }
+.q3{
+    background-image: url(imagens/q3.png);
+}
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
